@@ -56,11 +56,12 @@
             <button class="button" onclick="goToLink('ssp')">Via Intranet</button>
             <button class="button" onclick="goToLink('tim')">Interno TIM</button>
             <button class="button" onclick="goToLink('zerotier')">Via Zerotier</button>
+            <button class="button" onclick="goToLink('zerotier2')">Via Zerotier 2</button>
         </div>
     </div>
 </body>
 <script>
-    var urls = JSON.parse(`{"ssp": "https://10.129.3.14", "tim": "https://192.168.1.42", "zerotier": "https://10.147.20.149"}`)
+    var urls = JSON.parse(`{"ssp": "https://10.129.3.14", "tim": "https://192.168.1.42", "zerotier": "https://10.147.20.149", "zerotier2": "https://172.26.123.136"}`)
 
     function goToLink(name) {
         window.location.href = urls[name];
